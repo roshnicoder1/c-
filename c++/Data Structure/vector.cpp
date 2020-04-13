@@ -54,61 +54,63 @@ int main(){
         string s3 = s.substr(2,4); //it will take character from index 2 to next 4 characters from s
         cout<<s3<<endl;
 
-        // if(s1.compare(s2) == 0){
-        //      cout<<s1 <<"is equal to " << s2<<endl;
-        // }else{
-        //      cout<<s1 <<"is not equal to " << s2<<endl;
-        // }
+        if(s1.compare(s2) == 0){
+             cout<<s1 <<"is equal to " << s2<<endl;
+        }else{
+             cout<<s1 <<"is not equal to " << s2<<endl;
+        }
 
-        // Pair
+        // Pair #include<utility>
 
-        // pair<int,char> p;
-        // p = make_pair(2,'b');
-        // pair<int,char> p2(1,'a');
-        // cout<<p.first << " " << p.second<<endl;
-        // cout<<p2.first << " " << p2.second<<endl;
+        pair<int,char> p;
+        p = make_pair(2,'b');
+        pair<int,char> p2(1,'a');
+        cout<<p.first << " " << p.second<<endl;
+        cout<<p2.first << " " << p2.second<<endl;
 
 
         // Set
 
-        // set<int> s;
-        // int arr[] = {1,2,3,4,5,6,5};
+        set<int> s4;
+        int arr[] = {1,2,3,4,5,6,5};
 
-        // for(int i=0;i<7;i++){
-        //      s.insert(arr[i]);
-        // }
+        for(int i=0;i<7;i++){
+             s4.insert(arr[i]);
+        }
 
-        // set<int>::iterator it;
+        set<int>::iterator it4;
 
-        // for(it=s.begin();it!=s.end();it++){
-        //      cout<<*it<<endl;
-        // }
+        for(it4=s4.begin();it4!=s4.end();it4++){
+             cout<<*it4<<endl;
+        }
 
-        // if(s.find(7) == s.end()){
-        //      cout<<"Element not found"<<endl;
-        // }else{
-        //      cout<<"Element found"<<endl;
-        // }
+        if(s4.find(5) == s4.end()){
+             cout<<"Element not found"<<endl;
+        }else{
+             cout<<"Element found"<<endl;
+        }
 
 
-        // Map
+       // Map
 
-        // int arr[] = {1,2,3,4,5,6,5};
-        // unordered_map<int,int> m;
+        int arr[] = {1,2,3,4,5,6,5};
 
-        // for(int i=0;i<7;i++){
-        //         m[arr[i]] = m[arr[i]]+1;
-        // }
+        //we can use map or unordered_map (unorrderd_map uses hash so avrg toc is O(1))
+        unordered_map<int,int> m;
 
-        // unordered_map<int,int>::iterator it;
-        // for(it=m.begin();it!=m.end();it++){
-        //         cout<<it->first << " :" << it->second<<endl;
-        // }
-        // cout<<endl;
-        // m.erase(1);
-        // for(it=m.begin();it!=m.end();it++){
-        //         cout<<it->first << " :" << it->second<<endl;
-        // }
+        for(int i=0;i<7;i++){
+                m[arr[i]] = m[arr[i]]+1;
+        }
+
+        unordered_map<int,int>::iterator it;
+        for(it=m.begin();it!=m.end();it++){
+                cout<<it->first << " :" << it->second<<endl;
+        }
+        cout<<endl;
+        m.erase(1);
+        for(it=m.begin();it!=m.end();it++){
+                cout<<it->first << " :" << it->second<<endl;
+        }
 
 
 
