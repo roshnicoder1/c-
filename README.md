@@ -26,10 +26,11 @@ https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template
 
 ### Stack
 
-## Size of DataTypes
-https://www.geeksforgeeks.org/c-data-types/
-
-
 ### Queue
 
 ### Priority Queue
+
+
+## Size of DataTypes
+
+https://www.geeksforgeeks.org/c-data-types/
