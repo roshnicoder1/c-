@@ -38,6 +38,11 @@ int main(){
         for(it1=v1.begin();it1!=v1.end();it1++){
             cout<<*it1<<endl;
         }
+	// Find the min element 
+      cout << "\nMin Element = "<< *min_element(v.begin(), v.end()); 
+  
+    // Find the max element 
+       cout << "\nMax Element = " << *max_element(v.begin(), v.end()); 
 
 
         // String (Resize is not allowed)
