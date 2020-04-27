@@ -12,6 +12,8 @@ https://www.geeksforgeeks.org/stdstring-class-in-c/
 
 https://www.geeksforgeeks.org/c-string-class-and-its-applications/
 
+https://www.geeksforgeeks.org/char-vs-stdstring-vs-char-c/
+
 ### Pair
 
 ### Set 
