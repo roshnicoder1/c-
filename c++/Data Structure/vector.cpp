@@ -41,8 +41,10 @@ int main(){
 	// Find the min element 
       cout << "\nMin Element = "<< *min_element(v.begin(), v.end()); 
   
-    // Find the max element 
-       cout << "\nMax Element = " << *max_element(v.begin(), v.end()); 
+        // Find the max element 
+      cout << "\nMax Element = " << *max_element(v.begin(), v.end()); 
+	//sorting vector
+	sort(v.begin(), v.end()); 
 
 
         // String (Resize is not allowed)
